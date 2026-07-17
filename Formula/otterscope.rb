@@ -5,21 +5,21 @@
 class Otterscope < Formula
   desc "Lightweight, self-hosted observability and evals for AI agents"
   homepage "https://github.com/otterscope/otterscope"
-  version "0.2.0"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/otterscope/otterscope/releases/download/v0.2.0/otterscope_0.2.0_darwin_amd64.tar.gz"
-      sha256 "e4a46ed1104299493427adad984fe3c47c38c7695c42ec7fbf5c9d843778c4df"
+      url "https://github.com/otterscope/otterscope/releases/download/v0.3.0/otterscope_0.3.0_darwin_amd64.tar.gz"
+      sha256 "1ea380be327d44eae3b0caff8ba63611c23847734a6112abf4848649921c126e"
 
       define_method(:install) do
         bin.install "otterscope"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/otterscope/otterscope/releases/download/v0.2.0/otterscope_0.2.0_darwin_arm64.tar.gz"
-      sha256 "8fdca0128701d3793b9598286c797c2825caec9f4f96bfff48224b2eb31a6114"
+      url "https://github.com/otterscope/otterscope/releases/download/v0.3.0/otterscope_0.3.0_darwin_arm64.tar.gz"
+      sha256 "d495727aae3f342c83daae2a62c13fe12e52179ecdc29618dea04439b7fcfb07"
 
       define_method(:install) do
         bin.install "otterscope"
@@ -29,15 +29,15 @@ class Otterscope < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/otterscope/otterscope/releases/download/v0.2.0/otterscope_0.2.0_linux_amd64.tar.gz"
-      sha256 "d4ebc8cf462df2e89da869460481547cd39cb12504fcda78b4c1d9a2e737d31c"
+      url "https://github.com/otterscope/otterscope/releases/download/v0.3.0/otterscope_0.3.0_linux_amd64.tar.gz"
+      sha256 "0ae568ab0fb0645c4eb0d906c53f057f5531652309b1bf1bb951739b6e8404e8"
       define_method(:install) do
         bin.install "otterscope"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/otterscope/otterscope/releases/download/v0.2.0/otterscope_0.2.0_linux_arm64.tar.gz"
-      sha256 "7bb579de7128b807f41e53c07d52bd3e029ad0d7301745ba12d79ed8a546a38b"
+      url "https://github.com/otterscope/otterscope/releases/download/v0.3.0/otterscope_0.3.0_linux_arm64.tar.gz"
+      sha256 "e274f54c5e27de8485f09102766e9666d57c3426b2b44208578ef707075026c9"
       define_method(:install) do
         bin.install "otterscope"
       end
